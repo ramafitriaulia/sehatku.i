@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="detail.css" />
+</head>
+    
+<body>
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="bi bi-heart-pulse-fill"></i>
+      SehatKu.id
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="SehatKu.id.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="fitur.html">Fitur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aktivitas.html">Aktivitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tips sehat.html">Tips Sehat</a>
+        </li>
+      </ul>
+
+      <!-- kanan -->
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-search text-white fs-5"></i>
+        <button class="theme-btn">
+          <i class="bi bi-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER DETAIL -->
+<section class="banner-detail">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- TEKS (KIRI) -->
+      <div class="col-lg-5 text-center text-lg-start">
+        <h1>Grafik Progress</h1>
+        <p>
+          Grafik progress menampilkan perkembangan aktivitas olahraga harian seperti durasi latihan, kalori yang Terbakar, serta tingkat konsisten olaraga setiap minggu.
+        </p>
+      </div>
+      <!-- GAMBAR (KANAN) -->
+      <div class="col-lg-7 text-center">
+        <img src="https://i.pinimg.com/1200x/1b/79/6e/1b796e43cddb7564d1b88ffb02e8decf.jpg"
+          class="img-fluid banner-grafik"
+             alt="grafik olahraga">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container mt-4">
+
+  <!-- CHART -->
+  <h2>
+      <i class="bi bi-graph-up"></i> Grafik Progress
+    </h2>
+
+    <p class="text-progress">
+      Grafik progress menunjukkan perkembangan aktivitas olahraga dan kalori
+      yang terbakar selama beberapa hari terakhir.
+    </p>
+
+    <!-- DURASI -->
+    <div class="progress-card mb-4">
+
+      <h4 class="mb-4">
+        <i class="bi bi-stopwatch"></i> Durasi Olahraga
+      </h4>
+
+      <!-- ITEM -->
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Senin</span>
+          <span>30 Menit</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-success" style="width:60%"></div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Selasa</span>
+          <span>45 Menit</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-info" style="width:80%"></div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Rabu</span>
+          <span>20 Menit</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-warning" style="width:40%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- KALORI -->
+    <div class="progress-card">
+
+      <h4 class="mb-4">
+        <i class="bi bi-fire"></i> Kalori Terbakar
+      </h4>
+
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Senin</span>
+          <span>200 kcal</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-danger" style="width:50%"></div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Selasa</span>
+          <span>320 kcal</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-success" style="width:80%"></div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="d-flex justify-content-between">
+          <span>Rabu</span>
+          <span>150 kcal</span>
+        </div>
+
+        <div class="progress mt-2">
+          <div class="progress-bar bg-warning" style="width:35%"></div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- STREAK -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-lightning-charge"></i> Konsistensi (Streak)</h5>
+    <p><b>🔥 4 Hari Berturut-turut</b></p>
+    <p class="text-muted">Kamu cukup konsisten berolahraga minggu ini.</p>
+  </div>
+
+  <!-- LEVEL -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-trophy"></i> Level Aktivitas</h5>
+    <ul>
+      <li>🟢 Ringan: 0–30 menit</li>
+      <li>🟡 Aktif: 30–60 menit</li>
+      <li>🔴 Intens: >60 menit</li>
+    </ul>
+    <p><b>Status kamu: 🟡 Aktif</b></p>
+  </div>
+
+  <!-- KESIMPULAN -->
+  <div class="kesimpulan p-3">
+    <h5><i class="bi bi-chat-quote"></i> Kesimpulan</h5>
+    <p>
+      Aktivitas olahraga kamu sudah cukup baik dengan durasi yang stabil setiap hari.
+      Namun masih bisa ditingkatkan agar mencapai level <b>ideal (60 menit per hari)</b>.
+      Pertahankan konsistensi agar tubuh tetap sehat dan bugar.
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3 mt-5" style="background:linear-gradient(135deg, #0f2027, #203a43, #2c7744); color: white;">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- LOGO & DESKRIPSI -->
+      <div class="col-md-4 mb-4">
+        <h4>
+          <i class="bi bi-heart-pulse-fill"></i>
+          SehatKu.id
+        </h4>
+
+        <p class="mt-3">
+          Website kesehatan yang membantu kamu menerapkan
+          gaya hidup sehat, memantau aktivitas, dan menjaga
+          kebiasaan baik setiap hari.
+        </p>
+      </div>
+
+      <!-- MENU -->
+      <div class="col-md-2 mb-4">
+        <h5>Menu</h5>
+
+        <ul class="list-unstyled mt-3">
+          <li><a href="SehatKu.id.html" text-decoration-none">Home</a></li>
+          <li><a href="fitur.html"  text-decoration-none">Fitur</a></li>
+          <li><a href="aktivitas.html" text-decoration-none">Aktivitas</a></li>
+          <li><a href="tips sehat.html"  text-decoration-none">Tips Sehat</a></li>
+        </ul>
+      </div>
+
+      <!-- KONTAK -->
+      <div class="col-md-3 mb-4">
+        <h5>Kontak</h5>
+
+        <p class="mt-3 mb-1">
+          <i class="bi bi-envelope-fill"></i>
+          sehatku@gmail.com
+        </p>
+
+        <p class="mb-1">
+          <i class="bi bi-telephone-fill"></i>
+          0812-3456-7890
+        </p>
+
+        <p>
+          <i class="bi bi-geo-alt-fill"></i>
+          Indonesia
+        </p>
+      </div>
+
+      <!-- SOSIAL MEDIA -->
+      <div class="col-md-3 mb-4">
+        <h5>Sosial Media</h5>
+
+        <div class="mt-3 d-flex gap-3 fs-4">
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <!-- COPYRIGHT -->
+    <div class="text-center">
+      <p class="mb-0">
+        © 2026 SehatKu.id | Hidup sehat dimulai dari kebiasaan kecil
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+    
+</body>
+</html>

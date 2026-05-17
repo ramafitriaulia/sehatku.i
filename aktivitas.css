@@ -1,0 +1,217 @@
+/* aktivitas.css */
+
+body{
+    background:linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c7744
+    );
+
+    color:white;
+}
+
+/* navbar */
+.navbar-custom{
+    background:#14532d;
+}
+
+/* banner */
+.banner-detail{
+    padding:130px 0 70px;
+}
+
+.banner-detail h1{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.banner-detail p{
+    color:#d8d8d8;
+    font-size:18px;
+}
+
+/* banner image */
+.banner-img{
+    width:300px;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* section */
+.aktivitas-section{
+    padding-bottom:70px;
+}
+
+/* card */
+.card-aktivitas{
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    padding:30px;
+    border-radius:25px;
+
+    margin-bottom:25px;
+}
+
+.foto-aktivitas{
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* image card */
+.img-card{
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    transition:0.3s;
+}
+
+.img-card:hover{
+    transform:scale(1.1);
+}
+
+/* icon */
+.icon-card{
+    font-size:35px;
+    margin-right:15px;
+    color:#86efac;
+}
+
+.card-aktivitas h3{
+    font-weight:bold;
+}
+
+.card-aktivitas p{
+    color:#e5e5e5;
+}
+
+.card-aktivitas ul li{
+    margin-bottom:10px;
+}
+
+/* riwayat */
+.riwayat-item{
+    display:flex;
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* progress */
+.progress{
+    height:14px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.2);
+}
+
+.progress-bar{
+    border-radius:20px;
+}
+
+/* status */
+.status-box{
+    background:rgba(255,255,255,0.15);
+
+    padding:30px;
+    border-radius:25px;
+
+    margin-bottom:25px;
+}
+
+/* motivasi */
+.motivasi-box{
+    background:#22c55e;
+
+    padding:25px;
+    border-radius:25px;
+}
+
+.motivasi-box i{
+    font-size:30px;
+}
+
+.garis-pemisah{
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(
+    to right,
+    transparent,
+    #86efac,
+    transparent
+    );
+
+    margin:20px 0 40px;
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c7744
+    );
+
+    color:white;
+}
+
+/* Judul */
+footer h4,
+footer h5{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* Text */
+footer p{
+    color:#d8d8d8;
+    line-height:28px;
+}
+
+/* Link */
+footer a{
+    color:#d8d8d8 !important;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+/* Hover link */
+footer a:hover{
+    color:#7dff98 !important;
+}
+
+/* Sosial media */
+footer .fs-4 a{
+    font-size:24px;
+}
+
+/* Garis */
+footer hr{
+    border-color:rgba(255,255,255,0.2);
+}
+
+/* Copyright */
+footer .text-center p{
+    color:#d8d8d8;
+    font-size:14px;
+}

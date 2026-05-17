@@ -1,0 +1,233 @@
+/* fitur.css */
+
+body{
+    background:linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c7744
+    );
+
+    color:white;
+}
+
+/* navbar */
+.navbar-custom{
+    background:#14532d;
+}
+
+/* banner */
+.banner-fitur{
+    padding:120px 0 70px;
+}
+
+.banner-fitur h1{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.banner-fitur p{
+    font-size:18px;
+    color:#d8d8d8;
+}
+
+/* banner image */
+.banner-img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:25px;
+    display: top;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* garis */
+.garis-pemisah{
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(
+    to right,
+    transparent,
+    #86efac,
+    transparent
+    );
+
+    margin-bottom:40px;
+}
+
+/* section */
+.fitur-section{
+    padding-bottom:70px;
+}
+
+/* card */
+.card-fitur{
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    padding:30px;
+    border-radius:25px;
+
+    height:100%;
+}
+
+/* image */
+.fitur-img{
+    width:100%;
+    height:220px;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition:0.3s;
+    object-fit: cover;
+}
+
+.fitur-img:hover{
+    transform:scale(1.02);
+}
+
+/* title */
+.card-fitur h3{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* text */
+.card-fitur p{
+    color:#e5e5e5;
+}
+
+.card-fitur ul li{
+    margin-bottom:10px;
+}
+
+/* button */
+.btn-fitur{
+    background:#22c55e;
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+    border-radius:30px;
+
+    margin-top:10px;
+
+    transition:0.3s;
+}
+
+.btn-fitur:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+    color:white;
+}
+
+/* manfaat */
+.manfaat-box{
+    background:rgba(255,255,255,0.15);
+
+    padding:30px;
+    border-radius:25px;
+
+    margin-top:40px;
+    margin-bottom:25px;
+}
+
+/* keunggulan */
+.keunggulan-box{
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    padding:30px;
+    border-radius:25px;
+
+    margin-bottom:25px;
+}
+
+.fitur-icon{
+    font-size:40px;
+    color:#86efac;
+    margin-bottom:15px;
+}
+
+/* motivasi */
+.motivasi-box{
+    background:#22c55e;
+
+    padding:25px;
+    border-radius:25px;
+}
+
+.motivasi-box i{
+    font-size:30px;
+}
+
+/* responsive */
+@media(max-width:768px){
+
+    .banner-fitur h1{
+        font-size:38px;
+    }
+
+    .banner-img{
+        width:230px;
+        height:230px;
+    }
+
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c7744
+    );
+
+    color:white;
+}
+
+/* Judul */
+footer h4,
+footer h5{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* Text */
+footer p{
+    color:#d8d8d8;
+    line-height:28px;
+}
+
+/* Link */
+footer a{
+    color:#d8d8d8 !important;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+/* Hover link */
+footer a:hover{
+    color:#7dff98 !important;
+}
+
+/* Sosial media */
+footer .fs-4 a{
+    font-size:24px;
+}
+
+/* Garis */
+footer hr{
+    border-color:rgba(255,255,255,0.2);
+}
+
+/* Copyright */
+footer .text-center p{
+    color:#d8d8d8;
+    font-size:14px;
+}

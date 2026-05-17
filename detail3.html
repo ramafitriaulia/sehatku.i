@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantau Air Minum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="detail.css" />
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="bi bi-heart-pulse-fill"></i>
+      SehatKu.id
+    </a>
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="SehatKu.id.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="fitur.html">Fitur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aktivitas.html">Aktivitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tips sehat.html">Tips Sehat</a>
+        </li>
+      </ul>
+
+      <!-- kanan -->
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-search text-white fs-5"></i>
+        <button class="theme-btn">
+          <i class="bi bi-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO / BANNER -->
+<section class="banner-detail py-4">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- TEKS -->
+      <div class="col-lg-5 text-center text-lg-start">
+        <h1>🏃‍♂️ Aktivitas Olahraga Harian</h1>
+        <p>
+          Aktivitas olahraga membantu menjaga kesehatan tubuh, meningkatkan stamina,
+          dan membuat tubuh lebih bugar setiap hari.
+        </p>
+      </div>
+
+      <!-- GAMBAR -->
+      <div class="col-lg-7 text-center">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74"
+             class="img-fluid gambar-olahraga"
+             alt="olahraga">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="container mt-3">
+
+  <!-- RINGKASAN -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-activity"></i> Ringkasan Aktivitas</h5>
+    <p id="hasil">Belum ada data olahraga.</p>
+  </div>
+
+  <!-- KATEGORI -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-bar-chart"></i> Kategori Aktivitas</h5>
+    <ul>
+      <li>🟢 Ringan → jalan santai, stretching</li>
+      <li>🟡 Sedang → jogging, bersepeda</li>
+      <li>🔴 Berat → lari cepat, gym intensif</li>
+    </ul>
+  </div>
+<!--kategori-->
+  <div class="card p-3 mb-3">
+  <h5><i class="bi bi-plus-circle"></i> Tambah Aktivitas</h5>
+
+  <p>Pilih jenis olahraga:</p>
+
+  <div class="d-flex flex-wrap gap-2">
+    <button class="btn btn-outline-light" onclick="setAktivitas('Jogging')">🏃 Jogging</button>
+    <button class="btn btn-outline-light" onclick="setAktivitas('Bersepeda')">🚴 Bersepeda</button>
+    <button class="btn btn-outline-light" onclick="setAktivitas('Gym')">🏋️ Gym</button>
+    <button class="btn btn-outline-light" onclick="setAktivitas('Jalan Santai')">🚶 Jalan</button>
+  </div>
+
+  <div class="mt-3">
+    <label>Durasi (menit)</label>
+    <input type="number" id="durasi" class="form-control">
+  </div>
+
+  <button class="btn btn-light w-100 mt-3" onclick="addData()">
+    <i class="bi bi-save"></i> Simpan
+  </button>
+</div>
+  <!-- RESET -->
+  <button class="btn btn-danger w-100 mb-3" onclick="resetData()">
+    <i class="bi bi-arrow-counterclockwise"></i> Reset Data
+  </button>
+
+  <!-- MANFAAT -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-heart-pulse"></i> Manfaat Olahraga</h5>
+    <ul>
+      <li>Meningkatkan daya tahan tubuh</li>
+      <li>Menjaga berat badan ideal</li>
+      <li>Mengurangi stres</li>
+      <li>Meningkatkan mood</li>
+    </ul>
+  </div>
+
+  <!-- TIPS -->
+  <div class="card p-3 mb-3">
+    <h5><i class="bi bi-lightbulb"></i> Tips Olahraga Sehat</h5>
+    <ul>
+      <li>Olahraga minimal 30 menit per hari</li>
+      <li>Selalu pemanasan</li>
+      <li>Minum air yang cukup</li>
+      <li>Jangan memaksakan tubuh</li>
+    </ul>
+  </div>
+
+  <!-- MOTIVASI -->
+  <div class="motivasi">
+    <i class="bi bi-chat-quote"></i>
+    “Tubuh sehat dimulai dari langkah kecil setiap hari.”
+  </div>
+
+</div>
+
+
+
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3 mt-5">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- LOGO & DESKRIPSI -->
+      <div class="col-md-4 mb-4">
+        <h4>
+          <i class="bi bi-heart-pulse-fill"></i>
+          SehatKu.id
+        </h4>
+
+        <p class="mt-3">
+          Website kesehatan yang membantu kamu menerapkan
+          gaya hidup sehat, memantau aktivitas, dan menjaga
+          kebiasaan baik setiap hari.
+        </p>
+      </div>
+
+      <!-- MENU -->
+      <div class="col-md-2 mb-4">
+        <h5>Menu</h5>
+
+        <ul class="list-unstyled mt-3">
+          <li><a href="#" class="text-decoration-none">Home</a></li>
+          <li><a href="fitur.html" class="text-decoration-none">Fitur</a></li>
+          <li><a href="aktivitas.html" class="text-decoration-none">Aktivitas</a></li>
+          <li><a href="tips sehat.html" class="text-decoration-none">Tips Sehat</a></li>
+        </ul>
+      </div>
+
+      <!-- KONTAK -->
+      <div class="col-md-3 mb-4">
+        <h5>Kontak</h5>
+
+        <p class="mt-3 mb-1">
+          <i class="bi bi-envelope-fill"></i>
+          sehatku@gmail.com
+        </p>
+
+        <p class="mb-1">
+          <i class="bi bi-telephone-fill"></i>
+          0812-3456-7890
+        </p>
+
+        <p>
+          <i class="bi bi-geo-alt-fill"></i>
+          Indonesia
+        </p>
+      </div>
+
+      <!-- SOSIAL MEDIA -->
+      <div class="col-md-3 mb-4">
+        <h5>Sosial Media</h5>
+
+        <div class="mt-3 d-flex gap-3 fs-4">
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <!-- COPYRIGHT -->
+    <div class="text-center">
+      <p class="mb-0">
+        © 2026 SehatKu.id | Hidup sehat dimulai dari kebiasaan kecil
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+    
+</body>
+</html>
+
